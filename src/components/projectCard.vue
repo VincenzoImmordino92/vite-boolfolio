@@ -23,19 +23,19 @@
 
 <template>
 
-    <div  class="card" style="width: 18rem;" >
-  <img :src='"http://127.0.0.1:8000/storage/"+ project.image' class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ project.title }}</h5>
-    <p class="card-text">{{ project.description }}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Data di inizio progetto: <strong>{{ project.start_date}}</strong> </li>
-    <li class="list-group-item">Data di fine progetto: <strong>{{project.end_date}}</strong> </li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-  <div class="card-body d-flex flex-column ">
-    <a href="#" class="card-link">{{ project.url }}</a>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img :src='"http://127.0.0.1:8000/storage/"+ project.image' class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">{{ project.description }}</p>
+        <p class="card-text"><small class="text-body-secondary">Data di inizio progetto: <strong>{{ project.start_date}}</strong></small></p>
+        <p class="card-text">Data di fine progetto: <strong>{{project.end_date}}</strong> </p>
+      </div>
+    </div>
   </div>
 </div>
 

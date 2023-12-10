@@ -32,8 +32,10 @@
       <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.description }}</p>
-        <p class="card-text"><small class="text-body-secondary">Data di inizio progetto: <strong>{{ project.start_date}}</strong></small></p>
+        <p class="card-text">Data di inizio progetto: <strong>{{ project.start_date}}</strong></p>
         <p class="card-text">Data di fine progetto: <strong>{{project.end_date}}</strong> </p>
+        <p class="card-text">Tipo di Progetto: <strong>{{project.type?.name}}</strong> </p>
+        <p class="card-text">Tecnologie usate in questo progetto:<strong v-for="technology in project.technologies" :key="technology.id">{{technology?.name}}</strong></p>
       </div>
     </div>
   </div>

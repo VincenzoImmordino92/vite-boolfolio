@@ -1,6 +1,27 @@
 @import "bootstrap/scss/bootstrap";
-
-body{
-  background-color: darkblue;
-  color: white;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+body{
+  background-color: rgb(65, 58, 48);
+  color: white;
+  
+.container{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 20px auto;
+  border: 1px solid rgb(255, 61, 47);
+  border-radius: 20px;
+  width: 100%;
+}
+
+  .main-wrapper{
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+}
+

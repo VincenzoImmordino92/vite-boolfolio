@@ -21,7 +21,8 @@
 
 <template>
   <div class="nav-wrapper">
-    <button @click="callApi(paginator.firstPageUrl)">
+    <button @click="callApi(paginator.firstPageUrl)"
+            :disabled="paginator.currentPage === 1">
       |&lt;
     </button>
 
@@ -33,7 +34,8 @@
             @click="callApi(link.url)"
             ></button>
       
-    <button @click="callApi(paginator.lastPageUrl)">
+    <button @click="callApi(paginator.lastPageUrl)"
+            :disabled="paginator.currentPage === paginator.lastPage">
       &gt;|
     </button>
 

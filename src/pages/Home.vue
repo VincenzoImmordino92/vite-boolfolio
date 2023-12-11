@@ -13,10 +13,7 @@
 
 
 <template>
-  <h1>home</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
+  <h1 class="text-center">Benvenuti nella Home Page di Ciao Router</h1>
 </template>
 
 

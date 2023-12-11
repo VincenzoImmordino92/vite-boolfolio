@@ -6,6 +6,7 @@ import Home from '/src/pages/Home.vue'
 import About from '/src/pages/About.vue'
 import Contacts from '/src/pages/Contacts.vue'
 import Project from '/src/pages/Project.vue'
+import ProjectDetail from '/src/pages/ProjectDetail.vue'
 import Error404 from '/src/pages/Error404.vue'
 //createRouter è un metodo con dentro un oggetto con delle determinate chiavi
 const router = createRouter({
@@ -36,6 +37,12 @@ const router = createRouter({
       path:'/progetti',
       name:'project',
       component: Project
+    },
+    {
+      //rotta con elemento dinamico con parametro(lo slug)
+      path:'/dettaglio-progetto/:slug',
+      name:'projectDeteil',
+      component: ProjectDetail
     },
 
     //rotta 404 da mettere come ultima rotta, significa 'tutte le rotte possibili' quindi ed è per questo motivo che intercetta tutte le rotte sbagliate ad esclusione di quelle precedenti

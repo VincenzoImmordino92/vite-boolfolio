@@ -23,10 +23,10 @@ export default{
     }
   },
   components:{
-   projectCard,
-   Loader,
-   Header,
-   Navigator,
+    projectCard,
+    Loader,
+    Header,
+    Navigator,
   },
   methods:{
     getApi(endpoint){

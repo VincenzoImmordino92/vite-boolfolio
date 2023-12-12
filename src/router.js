@@ -48,6 +48,7 @@ const router = createRouter({
     //rotta 404 da mettere come ultima rotta, significa 'tutte le rotte possibili' quindi ed è per questo motivo che intercetta tutte le rotte sbagliate ad esclusione di quelle precedenti
     {
       path: '/:pathMatch(.*)*',
+      name: 'error-404',
       component: Error404
     }
   ]

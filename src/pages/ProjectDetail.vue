@@ -16,8 +16,8 @@
   },
   methods:{
     getProject(slug){
-      console.log(store.apiUrl + '/get-project/' + slug) /* controllo URL se non ci sono doppi slash */
-      axios.get(store.apiUrl + '/get-project/'+ slug)
+      console.log(store.apiUrl + 'projects/get-project/' + slug) /* controllo URL se non ci sono doppi slash */
+      axios.get(store.apiUrl + 'projects/get-project/'+ slug)
       .then(res =>{
         if(!res.data.success){
           //se l'API restituisce il fallimento della chiamata restituisce la pagina 404

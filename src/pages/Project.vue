@@ -49,7 +49,7 @@ export default{
     }
   },
   mounted(){
-    this.getApi(store.apiUrl);
+    this.getApi(store.apiUrl + 'projects');
   },
 }
 

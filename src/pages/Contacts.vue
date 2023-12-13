@@ -1,10 +1,13 @@
   <script>
+  import ContactForm from '../components/partials/ContactForm.vue';
   export default {
   name:'Contacts',
   data(){
     return{}
   },
-  components:{},
+  components:{
+    ContactForm
+  },
   methods:{},
   mounted(){},
   computed:{}
@@ -13,10 +16,8 @@
 
 
 <template>
-  <h1>Contacts</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias obcaecati quas qui illo quidem ut molestiae nobis deleniti quasi hic maiores nulla sapiente non, dolore quia accusantium quaerat excepturi!</p>
+  <h1 class="text-center">Contatti</h1>
+  <ContactForm/>
 </template>
 
 
